@@ -13,31 +13,36 @@
 <body>
     <nav>
         <div class="top-navbar">
-            <li><a href="#">Questioner</a></li>
+            <li><a href="C:\Users\Davoucii\Desktop\Questioner New\index.html">Questioner</a></li>
             <div class="top-navbar-right">
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="/C:\Users\Davoucii\Desktop\Questioner New\signup.html">Sign Up</a></li>
+                <li><a href="/C:\Users\Davoucii\Desktop\Questioner New\signin.html">Sign In</a></li>
                 <li><a href="#">Log Out</a></li>
             </div>
         </div>
     </nav>
-    <h1>Sign Up Page</h1>
-    <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-      
-        <input type="submit" value="Submit">
-      </form>
+    <header class="header">Sign Up Here</header>
+
+
+    <div id="parent">
+        <form action="/action_page.php" id="form">
+            <div>
+                <label for="email">E-Mail:</label>
+                <input type="text" id="email" name="email" placeholder="E-Mail">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+
+    </div>
+
 </body>
 
 </html>

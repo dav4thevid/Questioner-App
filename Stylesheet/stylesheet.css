@@ -35,22 +35,52 @@
     float: right;
   }
 
+  /* HEADER */
+
+  .header{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    margin: 40px;
+  }
+
+  
+  /* LABEL */
+  label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-align:right;
+    padding-right:15px;
+    
+  }
+  
+
    /* FORM STYLING */
+#parent {
+    display: table;
+    width: 100%;
+ }
+ #form {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+ }
+   
 
   /* Style inputs */
-  input[type=text], select {
-    width: 70%;
-    padding: 12px 20px;
+  input {
+    width: 40%;
+    padding: 15px 15px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    
   }
-  
   /* Style the submit button */
   input[type=submit] {
-    width: 70%;
+    width: 30%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
