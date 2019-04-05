@@ -81,6 +81,13 @@
   }
 
   /* FORM */
+
+  /* FORM BACKGROUND */
+  .form-background {
+    background-color:rgb(190, 187, 187);
+    opacity: 0.96;
+    filter: alpha(opacity=50);
+  }
   
 
  /* Full-width input fields */
