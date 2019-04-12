@@ -33,6 +33,16 @@
 
   .viewall{
     font-size: 2rem;
+    text-decoration: none !important;
+    background-color: rgb(80, 59, 26);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    border-radius: 50px;
     
   }
 
@@ -111,6 +121,7 @@ hr {
 }
 
 /* Set a style for all buttons */
+
 button {
   background-color: #4CAF50;
   color: white;
