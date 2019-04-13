@@ -1,0 +1,100 @@
+body{
+    background-color:#000;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+#landing-header h1 {
+  color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:4em;
+}
+
+a{
+    font-size:2em;
+    text-decoration: none !important;
+    width: 115px;
+    height: 25px;
+    background: rgb(101, 153, 101);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    opacity: 0.9;
+}
+a:hover{
+background: rgb(91, 189, 91)
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://i.ibb.co/QQpJfQp/react-16.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://i.ibb.co/7vLbbR3/Opera-Snapshot-2018-07-03-224822-twitter-com-750x354.png);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://i.ibb.co/M1RB7cX/Adewale-Abati.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://i.ibb.co/r2D5zjG/Group-photo.jpg);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
